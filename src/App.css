@@ -1,0 +1,202 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  font-size: 100%;
+}
+
+body {
+  background-color: white;
+  line-height: 1.45;
+  font-family: "Chronicle Display A", "Chronicle Display B";
+  font-style: normal;
+  font-weight: 400;
+  /* background: transparent url( data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAMklEQVR4AWOgCLz/b0epAa6UGuBOqQHOQHLUgFEDnAbcBZ4UGwDOkiCnkIhdgNgNxAYAiYlD+8sEuo8AAAAASUVORK5CYII= ) repeat top left; */
+  padding: 0;
+  margin: 0;
+}
+
+h1, h2, h3, h4 {
+  font-weight: 700;
+  margin-top: 0;
+  letter-spacing: -0.01em;
+}
+
+h1 {
+  font-size: 6.854rem;
+  margin-bottom: 1.75rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 4.236rem;
+  margin-bottom: 1.75rem;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+h3 {
+  font-size: 2.618rem;
+  line-height: 1.55;
+  margin-bottom: 1rem;
+}
+
+h4 {
+  font-size: 1.618rem;
+  line-height: 1.24;
+  margin-bottom: 1rem;
+}
+
+h5, h6 {
+  font-size: 1rem;
+  line-height: 1;
+  letter-spacing: -0.01em;
+}
+
+p {
+  font-size: 1.35rem;
+  margin-bottom: 1.3rem;
+  max-width: 30em;
+  line-height: 1.58;
+  letter-spacing: -.003em;
+  font-family: "Whitney A", "Whitney B";
+}
+
+svg:not(:root) {
+  overflow: hidden;
+  display: block;
+}
+
+button {
+  background: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+[data-whatintent='keyboard'] *:focus {
+  outline-color: #E36326;
+}
+
+[data-whatintent='mouse'] *:focus,
+[data-whatintent='touch'] *:focus,
+a:hover,
+a:active,
+input:hover,
+input:active {
+  outline: none;
+}
+
+a {
+  color: #E36326;
+}
+
+:global {
+  .bold {
+    font-weight: 700;
+  }
+
+  p.bold {
+    font-size: 1.618rem;
+    line-height: 1.24;
+    margin-bottom: 1rem;
+    font-family: "Chronicle Display A", "Chronicle Display B";
+  }
+
+  .skipToContent {
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    display: block;
+  }
+  
+  .skipToContent:focus {
+    background-color: #000;
+    color: #fff;
+    font-size: 18px;
+    padding: 0 24px;
+    left: 3px;
+    line-height: 64px;
+    top: 3px;
+    z-index: 10000;
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    width: auto;
+  }
+
+  .dd-column {
+    max-width: 740px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    position: relative;
+    word-break: break-word;
+    word-wrap: break-word;
+  }
+}
+
+/*
+Font CSS
+
+Chron Bold - font-weight: 700;
+Chron Black - font-weight: 800;
+Whitney
+font-family: "Whitney A", "Whitney B";
+font-style: normal;
+font-weight: 400;
+Whitney Bold - font-weight: 700;
+
+*/
