@@ -32,7 +32,13 @@ class About extends Component {
         />
         <div className="dd-column">
           {this.props.content ? (
-            <div dangerouslySetInnerHTML={{ __html: this.props.content }} />
+            <div
+              dangerouslySetInnerHTML={{
+                __html:
+                  this.props.content.pageHtml.rendered +
+                  this.props.content.customContent.faq
+              }}
+            />
           ) : (
             <Loader />
           )}

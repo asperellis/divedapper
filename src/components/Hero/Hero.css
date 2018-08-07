@@ -1,13 +1,24 @@
+:root {
+  --base:              #e76225;
+  --bg-blend:          overlay;
+  --blur:              0px;
+  --fg-blend:          color;
+  --foreground:        #ee5b25;
+  --opacity:           0.6;
+  --spacing:           0px;
+}
+
 .hero {
   background-color: #E36326;
   color: #fff;
-  height: calc(100vh - 60px);
+  height: calc(100vh);
   width: 100%;
   position: relative;
   overflow: hidden;
   display: flex;
   align-items: flex-end;
   margin-bottom: 6.854rem;
+  padding-bottom: 100px;
 }
 
 .heroSubtitle {
@@ -16,23 +27,10 @@
   font-weight: 400;
   font-size: 1.618rem;
   line-height: 1.24;
-  margin-bottom: 1rem;
-  padding-bottom: 100px;
 }
 
-.heroImg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
-  min-height: 100%;
-  max-height: 100%;
-  width: 100%;
-  background-position: 50% 0;
-  background-size: cover;
-  background-repeat: no-repeat;
+.heroText {
+  padding-bottom: 100px;
 }
 
 .heroCaption {
@@ -45,20 +43,42 @@
   text-align: right;
 }
 
-.fadeInZoomIn {
-  animation-name: "fadeInZoomIn";
-  animation-duration: 500ms;
-  animation-delay: 5000ms;
+.heroImage {
+  background-color:    var(--base);
+  display:             flex;
+  flex:                1 1 100%;
+  height:              100%;
+  overflow:            hidden;
+  padding:             var(--spacing);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
-@keyframes fadeInZoomIn {
-  from {
-    opacity: 0;
-    transform: scale(2, 2);
-  }
+.heroImage img {
+  filter:              grayscale(100%) contrast(1) blur(var(--blur));
+  flex:                1 0 100%;
+  height:              100%;
+  max-width:           100%;
+  mix-blend-mode:      var(--bg-blend);
+  object-fit:          cover;
+  opacity:             var(--opacity);
+  position:            relative;
+  width:               100%;
+}
 
-  to {
-    opacity: 1;
-    transform: scale(1, 1);
-  }
+.heroImage::before {
+  background-color:    var(--foreground);
+  bottom:              0;
+  content:             '';
+  height:              100%;
+  left:                0;
+  mix-blend-mode:      var(--fg-blend);
+  position:            absolute;
+  right:               0;
+  top:                 0;
+  width:               100%;
+  z-index:             1;
 }

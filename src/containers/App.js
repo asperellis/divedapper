@@ -13,16 +13,14 @@ import InterviewList from './InverviewList';
 
 // Components
 import Header from './../components/Header/Header';
-
-// styles
+import Footer from './../components/Footer/Footer';
 
 const App = () => {
-  const MAIN_CONTENT_ID = 'mainContent';
   return (
     <Router>
       <ScrollToTop>
         <Header />
-        <main id={MAIN_CONTENT_ID}>
+        <main id={'mainContent'}>
           <Switch>
             {/* HOME */}
             <Route exact path="/" component={Interview} />
@@ -38,6 +36,7 @@ const App = () => {
             <Route component={Error} />
           </Switch>
         </main>
+        <Footer />
       </ScrollToTop>
     </Router>
   );

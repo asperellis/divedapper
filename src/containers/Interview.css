@@ -1,0 +1,59 @@
+.interview {
+  margin-bottom: 6.854rem;
+}
+
+.about {
+  display: flex;
+  background-color: #f2f2f2;
+  padding: 60px 0;
+}
+
+.aboutContent {
+  display: flex;
+  align-items: center;
+}
+
+.aboutContentText {
+  flex: 1;
+  margin-left: 80px;
+}
+
+.aboutContentText > p {
+  margin-bottom: 0;
+  max-width: 100%;
+}
+
+.aboutContentImage  {
+  width: 257px;
+  height: 206px;
+}
+
+.interviewFooter {
+  display: flex;
+  font-family: "Whitney A", "Whitney B";
+  justify-content: space-between;
+  padding: 60px 0;
+}
+
+.nextInterview {
+  height: 500px;
+  background-color: #E36326;
+  color: #fff;
+  display: flex;
+}
+
+.interviewFooterShare {
+  text-align: center;
+  flex: 1;
+}
+
+.interviewFooter > div:last-of-type {
+  text-align: right;
+}
+
+.nextInterviewText {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+}

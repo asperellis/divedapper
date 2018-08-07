@@ -103,6 +103,9 @@ p {
   max-width: 30em;
   line-height: 1.58;
   letter-spacing: -.003em;
+}
+
+article p {
   font-family: "Whitney A", "Whitney B";
 }
 
@@ -133,6 +136,7 @@ input:active {
 
 a {
   color: #E36326;
+  font-family: "Whitney A", "Whitney B";
 }
 
 :global {
@@ -144,7 +148,7 @@ a {
     font-size: 1.618rem;
     line-height: 1.24;
     margin-bottom: 1rem;
-    font-family: "Chronicle Display A", "Chronicle Display B";
+    font-family: "Whitney A", "Whitney B";
   }
 
   .skipToContent {
@@ -177,6 +181,18 @@ a {
 
   .dd-column {
     max-width: 740px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    position: relative;
+    word-break: break-word;
+    word-wrap: break-word;
+  }
+
+  .dd-column-wide {
+    max-width: 1140px;
     padding-left: 20px;
     padding-right: 20px;
     width: 100%;
